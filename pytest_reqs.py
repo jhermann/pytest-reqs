@@ -31,7 +31,8 @@ def pytest_sessionstart(session):
 def pytest_collection_modifyitems(config, session, items):
     if config.option.reqs:
         patterns = [
-            'req*.txt', 'req*.pip', 'requirements/*.txt', 'requirements/*.pip'
+            'req*.txt', 'req*.pip', 'requirements/*.txt', 'requirements/*.pip',
+            '*-requirements.txt', '*-requirements.pip',
         ]
         filenames = set(chain.from_iterable(map(glob, patterns)))
 

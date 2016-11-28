@@ -32,6 +32,8 @@ it will search for dependencies in the files matching:
 - ``req*.pip``
 - ``requirements/*.txt``
 - ``requirements/*.pip``
+- ``*-requirements.{txt,pip}``
+
 
 and the declared dependencies will be checked against the current environment.
 
